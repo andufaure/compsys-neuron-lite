@@ -62,7 +62,7 @@ class Neuron
 		void setAxon(int Axon) {this->axon = Axon;}
 		int getAxon() const {return axon;}
 
-		int getID() const {return id;}
+		int getId() const {return id;}
 		
 
 };

@@ -22,13 +22,13 @@ std::string	 Neuron::toString() const
 {
 		std::stringstream	sstream;
 		
-		sstream << "State : " << this->state << "\r\n"
-				<< "StatePLus : " << this->statePlus << "\r\n"
-				<< "Input : " << this->input << "\r\n"
-				<< "Threshold : " << this->threshold << "\r\n"
-				<< "Loss : " << this->loss << "\r\n"
-				<< "Axon : " << this->axon << "\r\n"
-				<< "ID : " << this->id << "\r\n";
+		sstream << "State : " << this->state << endl
+				<< "StatePLus : " << this->statePlus << endl
+				<< "Input : " << this->input << endl
+				<< "Threshold : " << this->threshold << endl
+				<< "Loss : " << this->loss << endl
+				<< "Axon : " << this->axon << endl
+				<< "ID : " << this->id << endl;
 				
 		return (sstream.str());
 }
