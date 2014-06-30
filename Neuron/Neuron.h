@@ -40,7 +40,7 @@ class Neuron
 
 		virtual ~Neuron();
 
-		std::string	toString() 	const;
+		virtual string toString() const;
 
 		Neuron& operator=(const Neuron & unNeuron);
 

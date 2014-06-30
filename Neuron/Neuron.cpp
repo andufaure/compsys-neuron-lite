@@ -18,11 +18,12 @@ Neuron &Neuron::operator=(const Neuron & unNeuron)
 	return (*this);
 }
 
-std::string	 Neuron::toString() const
+string	 Neuron::toString() const
 {
 		std::stringstream	sstream;
 		
-		sstream << "State : " << this->state << endl
+		sstream << "Values of this neuron : " << endl
+			    << "State : " << this->state << endl
 				<< "StatePLus : " << this->statePlus << endl
 				<< "Input : " << this->input << endl
 				<< "Threshold : " << this->threshold << endl
