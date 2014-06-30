@@ -12,13 +12,13 @@ int main(int argc, char *argv[])
 	n1->setLoss(4);
 	n1->setAxon(5);
 
-	n1->toString();
+	cout << n1->toString();
 
-	n2->toString();
+	cout << n2->toString();
 
 	*n2 = *n1;
 
-	n2->toString();
+	cout << n2->toString();
 
     return 0;
 }

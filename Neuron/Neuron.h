@@ -12,6 +12,7 @@
 #include <cmath>
 #include <string>
 #include <iostream>
+#include <sstream>
 
 using namespace std;
 
@@ -28,39 +29,40 @@ class Neuron
     double threshold; /*! amount of energy require to perform a spike */
     double loss; /*! amount of energy lost */
     int axon; /*! binary variable wich indicate if state >= threshold */
-    int ID; /*! unique id */
+    int id; /*! unique ID */
 
 
 	public:
 
 		double infinity;
 		
-		Neuron(void);
-		Neuron(int);
+		Neuron(int id = -1);
 
-		void toString();
+		virtual ~Neuron();
+
+		std::string	toString() 	const;
 
 		Neuron& operator=(const Neuron & unNeuron);
 
-		void setState(double State);
-		double getState();
+		void setState(double State) {this->state = State;}
+		double getState() const {return state;}
 
-		void setStatePlus(double StatePlus);
-		double getStatePlus();
+		void setStatePlus(double StatePlus) {this->statePlus = StatePlus;}
+		double getStatePlus() const {return statePlus;}
 
-		void setInput(double Input);
-		double getInput();
+		void setInput(double Input) {this->input = Input;}
+		double getInput() const {return input;}
 
-		void setThreshold(double Threshold);
-		double getThreshold();
+		void setThreshold(double Threshold) {this->threshold = Threshold;}
+		double getThreshold() const {return threshold;}
 
-		void setLoss(double Loss);
-		double getLoss();
+		void setLoss(double Loss) {this->loss = Loss;}
+		double getLoss() const {return loss;}
 
-		void setAxon(int Axon);
-		int getAxon();
+		void setAxon(int Axon) {this->axon = Axon;}
+		int getAxon() const {return axon;}
 
-		int getID();
+		int getID() const {return id;}
 		
 
 };
