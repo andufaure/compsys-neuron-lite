@@ -22,9 +22,9 @@ class WeightedMultipleNeuron : public WeightedSimpleNeuron
 
     public:
 
-        const unsigned int weightSize;
+        const unsigned weightSize;
 
-        WeightedMultipleNeuron(int id = -1, unsigned int weightSize = 0);
+        WeightedMultipleNeuron(int id = -1, unsigned weightSize = 0);
         ~WeightedMultipleNeuron();
 
         string toString() const;
