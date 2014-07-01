@@ -15,41 +15,39 @@
    */
 class WeightedSimpleNeuron : public Neuron
 {
-	protected :
+    protected :
 
-	double weight; /*! coeff constant on the input of energy */
+    double weight; /*! coeff constant on the input of energy */
     double alpha; /*! constant for calcul of update of amount of energy */
     double r; /*! constant for calcul of current amount of energy */
     double inputPlus; /*! temporary intern variable */
-	int firingCounter; /*! counter of nb of spike since the neuron exist */
+    int firingCounter; /*! counter of nb of spike since the neuron exist */
     int axonPlus; /*! temporary intern variable */
 
-	public:
+    public:
 
-		WeightedSimpleNeuron(int id = -1);
-		~WeightedSimpleNeuron(void);
+        WeightedSimpleNeuron(int id = -1);
+        virtual ~WeightedSimpleNeuron();
 
-		virtual string toString() const;
+        virtual string toString() const;
 
-		void setWeight(double weight) {this->weight = weight;}
-		double getWeight() const {return weight;}
+        void setWeight(double weight) {this->weight = weight;}
+        double getWeight() const {return weight;}
 
-		void setAlpha(double alpha) {this->alpha = alpha;}
-		double getAlpha() const {return alpha;}
+        void setAlpha(double alpha) {this->alpha = alpha;}
+        double getAlpha() const {return alpha;}
 
-		void setR(double r) {this->r = r;}
-		double getR() const {return r;}
+        void setR(double r) {this->r = r;}
+        double getR() const {return r;}
 
-		void setInputPlus(double inputPlus) {this->inputPlus = inputPlus;}
-		double getInputPlus() const {return inputPlus;}
+        void setInputPlus(double inputPlus) {this->inputPlus = inputPlus;}
+        double getInputPlus() const {return inputPlus;}
 
-		void setFiringCounter(int firingCounter) {this->firingCounter = firingCounter;}
-		int getFiringCounter() const {return firingCounter;}
+        void setFiringCounter(int firingCounter) {this->firingCounter = firingCounter;}
+        int getFiringCounter() const {return firingCounter;}
 
-		void setAxonPlus(int axonPlus) {this->axonPlus = axonPlus;}
-		int getAxonPlus() const {return axonPlus;}
-
-
+        void setAxonPlus(int axonPlus) {this->axonPlus = axonPlus;}
+        int getAxonPlus() const {return axonPlus;}
 };
 
 #endif

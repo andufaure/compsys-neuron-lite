@@ -21,9 +21,9 @@ using namespace std;
    */
 class Neuron
 {
-	protected:
+    protected:
 
-	double state; /*! current amount of energy */
+    double state; /*! current amount of energy */
     double statePlus; /*! temporary variable to mesure the delta between two iteration */
     double input; /*! temporary variable which sum the input */
     double threshold; /*! amount of energy require to perform a spike */
@@ -32,39 +32,37 @@ class Neuron
     int id; /*! unique ID */
 
 
-	public:
+    public:
 
-		double infinity;
+        double infinity;
 		
-		Neuron(int id = -1);
+        Neuron(int id = -1);
 
-		virtual ~Neuron();
+        virtual ~Neuron();
 
-		virtual string toString() const;
+        virtual string toString() const;
 
-		Neuron& operator=(const Neuron & unNeuron);
+        Neuron& operator=(const Neuron & unNeuron);
 
-		void setState(double State) {this->state = State;}
-		double getState() const {return state;}
+        void setState(double State) {this->state = State;}
+        double getState() const {return state;}
 
-		void setStatePlus(double StatePlus) {this->statePlus = StatePlus;}
-		double getStatePlus() const {return statePlus;}
+        void setStatePlus(double StatePlus) {this->statePlus = StatePlus;}
+        double getStatePlus() const {return statePlus;}
 
-		void setInput(double Input) {this->input = Input;}
-		double getInput() const {return input;}
+        void setInput(double Input) {this->input = Input;}
+        double getInput() const {return input;}
 
-		void setThreshold(double Threshold) {this->threshold = Threshold;}
-		double getThreshold() const {return threshold;}
+        void setThreshold(double Threshold) {this->threshold = Threshold;}
+        double getThreshold() const {return threshold;}
 
-		void setLoss(double Loss) {this->loss = Loss;}
-		double getLoss() const {return loss;}
+        void setLoss(double Loss) {this->loss = Loss;}
+        double getLoss() const {return loss;}
 
-		void setAxon(int Axon) {this->axon = Axon;}
-		int getAxon() const {return axon;}
+        void setAxon(int Axon) {this->axon = Axon;}
+        int getAxon() const {return axon;}
 
-		int getId() const {return id;}
-		
-
+        int getId() const {return id;}
 };
 
 #endif
