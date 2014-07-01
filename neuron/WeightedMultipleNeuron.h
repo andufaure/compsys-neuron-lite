@@ -29,6 +29,12 @@ class WeightedMultipleNeuron : public WeightedSimpleNeuron
 
         string toString() const;
 
+        virtual void initialize();
+        virtual void deltint(double inE); 
+        virtual void deltext(double inE, void* inMsg); 
+        virtual void deltcon(double inE, void* inMsg); 
+        virtual void* out() const; 
+
         double * getWeights() {return weights;}
         const double * getWeights() const {return weights;}
 

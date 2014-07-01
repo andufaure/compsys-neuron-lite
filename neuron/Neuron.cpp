@@ -33,3 +33,29 @@ string Neuron::toString() const
 				
     return (sstream.str());
 }
+
+void Neuron::initialize()
+{
+    cout << "Neuron::initialize" << endl;
+}
+
+void Neuron::deltint(double inE)
+{
+    cout << "Neuron::deltint" << endl;
+}
+
+void Neuron::deltext(double inE, void* inMsg)
+{
+    cout << "Neuron::deltext" << endl;
+}
+
+void Neuron::deltcon(double inE, void* inMsg)
+{
+    cout << "Neuron::deltcon" << endl;
+}
+
+void* Neuron::out() const
+{
+    cout << "Neuron::out" << endl;
+    return 0;
+}

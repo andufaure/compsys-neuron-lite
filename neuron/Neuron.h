@@ -13,13 +13,14 @@
 #include <string>
 #include <iostream>
 #include <sstream>
+#include "DEVSLite.hpp"
 
 using namespace std;
 
  /*! \class Neuron
    * \brief class representing the basic neuron
    */
-class Neuron
+class Neuron : public DEVSLite::Model
 {
     protected:
 
@@ -43,6 +44,12 @@ class Neuron
         virtual string toString() const;
 
         Neuron& operator=(const Neuron & unNeuron);
+
+        virtual void initialize();
+        virtual void deltint(double inE); 
+        virtual void deltext(double inE, void* inMsg); 
+        virtual void deltcon(double inE, void* inMsg); 
+        virtual void* out() const; 
 
         void setState(double State) {this->state = State;}
         double getState() const {return state;}

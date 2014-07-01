@@ -30,3 +30,29 @@ string WeightedMultipleNeuron::toString() const
 				
     return (sstream.str());
 }
+
+void WeightedMultipleNeuron::initialize()
+{
+    cout << "WeightedMultipleNeuron::initialize" << endl;
+}
+
+void WeightedMultipleNeuron::deltint(double inE)
+{
+    cout << "WeightedMultipleNeuron::deltint" << endl;
+}
+
+void WeightedMultipleNeuron::deltext(double inE, void* inMsg)
+{
+    cout << "WeightedMultipleNeuron::deltext" << endl;
+}
+
+void WeightedMultipleNeuron::deltcon(double inE, void* inMsg)
+{
+    cout << "WeightedMultipleNeuron::deltcon" << endl;
+}
+
+void* WeightedMultipleNeuron::out() const
+{
+    cout << "WeightedMultipleNeuron::out" << endl;
+    return 0;
+}

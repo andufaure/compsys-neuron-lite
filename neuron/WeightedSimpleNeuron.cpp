@@ -23,3 +23,29 @@ string WeightedSimpleNeuron::toString() const
 				
     return (sstream.str());
 }
+
+void WeightedSimpleNeuron::initialize()
+{
+    cout << "WeightedSimpleNeuron::initialize" << endl;
+}
+
+void WeightedSimpleNeuron::deltint(double inE)
+{
+    cout << "WeightedSimpleNeuron::deltint" << endl;
+}
+
+void WeightedSimpleNeuron::deltext(double inE, void* inMsg)
+{
+    cout << "WeightedSimpleNeuron::deltext" << endl;
+}
+
+void WeightedSimpleNeuron::deltcon(double inE, void* inMsg)
+{
+    cout << "WeightedSimpleNeuron::deltcon" << endl;
+}
+
+void* WeightedSimpleNeuron::out() const
+{
+    cout << "WeightedSimpleNeuron::out" << endl;
+    return 0;
+}

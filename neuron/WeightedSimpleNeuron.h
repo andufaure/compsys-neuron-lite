@@ -31,6 +31,12 @@ class WeightedSimpleNeuron : public Neuron
 
         virtual string toString() const;
 
+        virtual void initialize();
+        virtual void deltint(double inE); 
+        virtual void deltext(double inE, void* inMsg); 
+        virtual void deltcon(double inE, void* inMsg); 
+        virtual void* out() const; 
+
         void setWeight(double weight) {this->weight = weight;}
         double getWeight() const {return weight;}
 
