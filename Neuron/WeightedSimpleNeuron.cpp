@@ -6,7 +6,7 @@ WeightedSimpleNeuron::WeightedSimpleNeuron(int id)
 {}
 
 
-WeightedSimpleNeuron::~WeightedSimpleNeuron(void)
+WeightedSimpleNeuron::~WeightedSimpleNeuron()
 {}
 
 string	 WeightedSimpleNeuron::toString() const
