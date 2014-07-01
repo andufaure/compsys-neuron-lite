@@ -4,8 +4,6 @@
 
 namespace DEVSLite
 {
-	//const double Infinity = DBL_MAX;
-	
 	std::string	 Model::toString() const
 	{
 		std::stringstream	sstream;
