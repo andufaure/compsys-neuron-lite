@@ -10,7 +10,7 @@
 
 #include "Neuron.h"
 
- /*! \class Neuron
+ /*! \class WeightedSimpleNeuron
    * \brief class representing the basic weighted neuron
    */
 class WeightedSimpleNeuron : public Neuron

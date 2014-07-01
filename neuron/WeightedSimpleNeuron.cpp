@@ -9,9 +9,9 @@ WeightedSimpleNeuron::WeightedSimpleNeuron(int id)
 WeightedSimpleNeuron::~WeightedSimpleNeuron()
 {}
 
-string	 WeightedSimpleNeuron::toString() const
+string WeightedSimpleNeuron::toString() const
 {
-    std::stringstream	sstream;
+    std::stringstream sstream;
 
     sstream << Neuron::toString()
             << "Weight : " << this->weight << endl
@@ -19,7 +19,7 @@ string	 WeightedSimpleNeuron::toString() const
             << "R : " << this->r << endl
             << "InputPlus : " << this->inputPlus << endl
             << "FiringCounter : " << this->firingCounter << endl
-            << "AxonPlus : " << this->axonPlus << endl << endl;
+            << "AxonPlus : " << this->axonPlus << endl;
 				
     return (sstream.str());
 }
