@@ -2,7 +2,7 @@
 #define _NEURON_HPP
 
 /*!
- * \file Neuron.hpp
+ * \file Neuron.h
  * \brief File for the class representing the basic neuron
  * \author Vincent ALINGRIN
  * \version 0.1

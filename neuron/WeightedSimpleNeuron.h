@@ -2,7 +2,7 @@
 #define _WSNEURON_HPP
 
 /*!
- * \file WeightedSimpleNeuron.hpp
+ * \file WeightedSimpleNeuron.h
  * \brief File for the class representing the basic weighted neuron
  * \author Vincent ALINGRIN
  * \version 0.1
